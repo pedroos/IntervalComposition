@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntervalComposition", "IntervalComposition\IntervalComposition.csproj", "{1278194A-35DA-48D8-AE1E-B9A590AFB87D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntervalCompositionTests", "IntervalCompositionTests\IntervalCompositionTests.csproj", "{912A561E-7F6C-44B4-8BA9-4483653809D4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1278194A-35DA-48D8-AE1E-B9A590AFB87D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1278194A-35DA-48D8-AE1E-B9A590AFB87D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1278194A-35DA-48D8-AE1E-B9A590AFB87D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1278194A-35DA-48D8-AE1E-B9A590AFB87D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{912A561E-7F6C-44B4-8BA9-4483653809D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{912A561E-7F6C-44B4-8BA9-4483653809D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{912A561E-7F6C-44B4-8BA9-4483653809D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{912A561E-7F6C-44B4-8BA9-4483653809D4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
