@@ -15,7 +15,7 @@ Example 3:
 
 ![Example 3](https://github.com/pedroos/pedroos.github.io/blob/master/layered_intervals_svg_4.svg "Example 3")
 
-Here is a demonstration of the path of point visitation taken by the procedure:
+Here is a demonstration of the path of points considered:
 
 ![Example 3B](https://github.com/pedroos/pedroos.github.io/blob/master/layered_intervals_svg_4b.svg "Example 3B")
 
@@ -23,9 +23,7 @@ Here is a demonstration of the path of point visitation taken by the procedure:
 
 The calculation procedure of the final line is based on using a toggle state for each layer.
 
-The time taken to calculate is at maximum linear (O(n)) to the total number of points, as in examples 1) and 2). But normally, as in example 3) when there is a minimal path, the procedure will take a shortcut and less points will be considered. In this case, the time taken is logarithmic (O log n).
-
-In the example 3), there are 18 segments or 36 points. The minimal path consists of 12 points, or 33%.
+The time taken to calculate is linear (O(n)) to the number of points.
 
 The space taken for state during calculation is one true/false value per priority.
 
