@@ -3,21 +3,7 @@ Calculate a final set of intervals based on a composition of intervals with prio
 
 Maintain and change intervals and recalculate.
 
-Here are some examples of interval compositions:
-
-Example 1:
-
-![Example 1](https://github.com/pedroos/pedroos.github.io/blob/master/layered_intervals_svg_1.svg "Example 1")
-
-Example 2:
-
-![Example 2](https://github.com/pedroos/pedroos.github.io/blob/master/layered_intervals_svg_2.svg "Example 2")
-
-Example 3:
-
-![Example 3](https://github.com/pedroos/pedroos.github.io/blob/master/layered_intervals_svg_4.svg "Example 3")
-
-Path of points considered:
+Example of path of points considered:
 
 ![Example 3B](https://github.com/pedroos/pedroos.github.io/blob/master/layered_intervals_svg_4b.svg "Example 3B")
 
