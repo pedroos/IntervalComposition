@@ -1,5 +1,5 @@
 # Interval Composition
-Calculate a final set of intervals based on a composition of intervals with priorities.
+Calculate a final set of intervals based on a composition of intervals with priorities. More details - https://pedroos.github.io/an_algorithm_for_layered_interval_computation.html.
 
 Maintain and change intervals and recalculate.
 
@@ -20,7 +20,3 @@ The space taken for state during calculation is one true/false value per layer.
 The intervals are stored in a forward-only linked list.
 
 When an interval is modified, a traversal of all the points up to the change occurs; but points outside of the changed range are not recalculated.
-
-### Requirements
-
-Target is the .NET Framework 4 Client Profile.
