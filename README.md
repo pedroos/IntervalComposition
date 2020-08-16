@@ -1,11 +1,11 @@
 # Interval Composition
-Calculate a final set of intervals based on a composition of intervals with priorities. More details - https://pedroos.github.io/an_algorithm_for_layered_interval_computation.html.
+Calculate a final set of intervals based on a composition of intervals with priorities. [More details](http://psobo.com/blog/an_algorithm_for_layered_interval_computation.html).
 
 Maintain and change intervals and recalculate.
 
 Example of path of points considered:
 
-![Example 3B](https://github.com/pedroos/pedroos.github.io/blob/master/layered_intervals_svg_4b.svg "Example 3B")
+![Example 3B](https://psobo.com/blog/layered_intervals_svg_4b.svg "Example 3B")
 
 ### Execution time
 
