@@ -1,22 +1,39 @@
 # Interval Composition
-Calculate a final set of intervals based on a composition of intervals with priorities. [More details](http://psobo.com/blog/an_algorithm_for_layered_interval_computation.html).
+An algorithm to calculate a final set of intervals from a set of layered intervals linearly (i.e., from left to right).
 
-Maintain and change intervals and recalculate.
+Interval sets can be created and stored. Intervals are stored in a forward-only linked list.
 
-Example of path of points considered:
+When an interval is modified, a traversal of all the points up to the point of change occurs; points outside of the range are not recalculated.
 
-![Example 3B](https://psobo.com/blog/layered_intervals_svg_4b.svg "Example 3B")
+The sets of intervals below are composed intervals with the calculated path shown below each example.
+
+![Intervals](intervals.png)
 
 ### Execution time
 
-The calculation of the final line is based on using a toggle state for each layer.
+The main algorithm, the calculation of the final line, uses a toggle state for each layer.
 
 The time taken to calculate is fixed (O(n)) relative to the number of points.
 
 The space taken for state during calculation is one true/false value per layer.
 
-### Change processing
+### Pseudocode
 
-The intervals are stored in a forward-only linked list.
-
-When an interval is modified, a traversal of all the points up to the change occurs; but points outside of the changed range are not recalculated.
+```
+    from first to last node, ordered by position first and ascending lane second:
+    if not closing:
+        if not open in any higher lane:
+            if final opened:
+                close final.
+            open final.
+        open in this lane.
+    if closing:
+        closed in this lane.
+        if final opened:
+            if not open in any higher lane:
+                close final.
+    if not final opened:
+        if at last lane of position, except for the last position:
+            if open in any other lane:
+                open final.
+```
